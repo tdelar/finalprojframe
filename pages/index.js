@@ -186,11 +186,6 @@ export default function Home() {
               {selectedBoundarie.id == 2 && (
                 <SideBarZip info={zipInfo}></SideBarZip>
               )}
-
-              {selectedBoundarie.id == 3 && (
-                <SideBarBlock info={blockInfo}></SideBarBlock>
-              )}
-              {/* <SideBar info={null}></SideBar> */}
             </div>
           </div>
 
