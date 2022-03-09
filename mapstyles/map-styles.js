@@ -89,6 +89,26 @@ export const countyChloroPop = {
   },
 };
 
+export const countyChloroOneBedroom = {
+  id: "countyChloroPop",
+  type: "fill",
+  source: "countyOutline",
+  "source-layer": "data5-9tkhtl",
+  paint: {
+    "fill-color": {
+      property: "p1",
+      stops: [
+        [10000, "#a7f3d0"],
+        [25000, "#5eead4"],
+        [100000, "#22d3ee"],
+        [250000, "#0ea5e9"],
+        [500000, "#2563eb"],
+      ],
+    },
+    "fill-opacity": 0.6,
+  },
+};
+
 export const countyChloroP1 = {
   id: "countyChloroP1",
   type: "fill",
