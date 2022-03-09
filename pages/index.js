@@ -26,6 +26,8 @@ import SideBar from "../components/SideBar";
 import SideBarZip from "../components/SideBarZip";
 
 import {
+  countyChloroRentOneBedroom,
+  zipChloroCost,
   blockChloro,
   blockOutline,
   zipOutline,
@@ -123,17 +125,15 @@ export default function Home() {
                 mapboxAccessToken="pk.eyJ1IjoidG9tbXlkZWwiLCJhIjoiY2t4NW4xbG9zMmR2aTJ1cDJnM2xuemd6diJ9.9YwDOFlOAN7Yn6rXYTSt-w"
                 interactiveLayerIds={[arr[selectedBoundarie.id - 1]]}
               >
+                {/* population */}
                 {selectedBoundarie.id == 1 && selectedChloro.id == 1 && (
                   <Source type="vector" url="mapbox://tommydel.cnm6nd5n">
-                    <Layer
-                      beforeId="waterway-label"
-                      {...countyChloroOneBedroom}
-                    />
+                    <Layer beforeId="waterway-label" {...countyChloroPop} />
 
                     <Layer beforeId="waterway-label" {...countyOutline} />
                   </Source>
                 )}
-
+                {/* home value */}
                 {selectedBoundarie.id == 1 && selectedChloro.id == 2 && (
                   <Source type="vector" url="mapbox://tommydel.cnm6nd5n">
                     <Layer
@@ -144,12 +144,12 @@ export default function Home() {
                     <Layer beforeId="waterway-label" {...countyOutline} />
                   </Source>
                 )}
-
+                {/* rent value */}
                 {selectedBoundarie.id == 1 && selectedChloro.id == 3 && (
                   <Source type="vector" url="mapbox://tommydel.cnm6nd5n">
                     <Layer
                       beforeId="waterway-label"
-                      {...countyChloroOneBedroom}
+                      {...countyChloroRentOneBedroom}
                     />
 
                     <Layer beforeId="waterway-label" {...countyOutline} />
@@ -165,7 +165,7 @@ export default function Home() {
 
                 {selectedBoundarie.id == 2 && selectedChloro.id == 2 && (
                   <Source type="vector" url="mapbox://tommydel.59v1tlyf">
-                    <Layer beforeId="waterway-label" {...zipChloro} />
+                    <Layer beforeId="waterway-label" {...zipChloroCost} />
                     <Layer beforeId="waterway-label" {...zipOutline} />
                   </Source>
                 )}

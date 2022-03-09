@@ -37,7 +37,7 @@ export const zipOutline = {
     "fill-color": "rgba(0,0,0,0.2)",
   },
 };
-
+//---------------------------------------------------------------
 export const zipChloro = {
   id: "zipChloro",
   type: "fill",
@@ -47,11 +47,31 @@ export const zipChloro = {
     "fill-color": {
       property: "rentOneBedroom",
       stops: [
-        [10, "#a7f3d0"],
-        [25000, "#5eead4"],
-        [100000, "#22d3ee"],
-        [250000, "#0ea5e9"],
-        [500000, "#2563eb"],
+        [500, "#eff6ff"],
+        [800, "#bfdbfe"],
+        [1100, "#60a5fa"],
+        [1500, "#2563eb"],
+        [2000, "#1e40af"],
+      ],
+    },
+    "fill-opacity": 0.6,
+  },
+};
+
+export const zipChloroCost = {
+  id: "zipChloro",
+  type: "fill",
+  source: "zipOutline",
+  "source-layer": "zipdata-03lh57",
+  paint: {
+    "fill-color": {
+      property: "onebedroom",
+      stops: [
+        [50000, "#eff6ff"],
+        [100000, "#bfdbfe"],
+        [200000, "#60a5fa"],
+        [300000, "#2563eb"],
+        [500000, "#1e40af"],
       ],
     },
     "fill-opacity": 0.6,
@@ -67,7 +87,7 @@ export const countyOutline = {
     "fill-color": "rgba(0,0,0,0.2)",
   },
 };
-
+//--------------------------------------------------------------------------------------------------------------------------------------------------
 //done
 export const countyChloroPop = {
   id: "countyChloroPop",
@@ -78,11 +98,11 @@ export const countyChloroPop = {
     "fill-color": {
       property: "pop",
       stops: [
-        [10000, "#a7f3d0"],
-        [25000, "#5eead4"],
-        [100000, "#22d3ee"],
-        [250000, "#0ea5e9"],
-        [500000, "#2563eb"],
+        [10000, "#eff6ff"],
+        [25000, "#bfdbfe"],
+        [100000, "#60a5fa"],
+        [250000, "#2563eb"],
+        [500000, "#1e40af"],
       ],
     },
     "fill-opacity": 0.6,
@@ -98,11 +118,31 @@ export const countyChloroOneBedroom = {
     "fill-color": {
       property: "p1",
       stops: [
-        [10000, "#a7f3d0"],
-        [25000, "#5eead4"],
-        [100000, "#22d3ee"],
-        [250000, "#0ea5e9"],
-        [500000, "#2563eb"],
+        [50000, "#eff6ff"],
+        [100000, "#bfdbfe"],
+        [200000, "#60a5fa"],
+        [300000, "#2563eb"],
+        [500000, "#1e40af"],
+      ],
+    },
+    "fill-opacity": 0.6,
+  },
+};
+
+export const countyChloroRentOneBedroom = {
+  id: "countyChloroPop",
+  type: "fill",
+  source: "countyOutline",
+  "source-layer": "data5-9tkhtl",
+  paint: {
+    "fill-color": {
+      property: "rent_50_1",
+      stops: [
+        [500, "#eff6ff"],
+        [800, "#bfdbfe"],
+        [1100, "#60a5fa"],
+        [1500, "#2563eb"],
+        [2000, "#1e40af"],
       ],
     },
     "fill-opacity": 0.6,
