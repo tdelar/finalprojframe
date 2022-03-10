@@ -158,7 +158,6 @@ export default function Home() {
 
                 {selectedBoundarie.id == 2 && selectedChloro.id == 1 && (
                   <Source type="vector" url="mapbox://tommydel.59v1tlyf">
-                    <Layer beforeId="waterway-label" {...zipChloro} />
                     <Layer beforeId="waterway-label" {...zipOutline} />
                   </Source>
                 )}
